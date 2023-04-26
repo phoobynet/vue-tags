@@ -34,9 +34,9 @@ const onDeleted = (key: string) => {
 <template>
   <main>
     <header>
-      <div class="heading">
+      <h1>
         Tag Example
-      </div>
+      </h1>
     </header>
 
     <div class="demo">
@@ -48,29 +48,12 @@ const onDeleted = (key: string) => {
         @selected="onSelected"
         @deleted="onDeleted"
       />
-
-      <div>Other stuff</div>
     </div>
   </main>
 </template>
 
-<style>
-  @media screen and (max-width: 375px) {
-    main {
-      margin: 0.5rem 0.5rem;
-
-      header {
-        .heading {
-          font-size: 1.5rem;
-          font-weight: bold;
-        }
-      }
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    main {
-      margin: 1rem 2rem;
-    }
+<style lang="scss">
+  main {
+    margin: 1rem 2rem;
   }
 </style>
